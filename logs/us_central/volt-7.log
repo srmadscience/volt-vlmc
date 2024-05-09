@@ -1,0 +1,780 @@
+2019-03-29 08:00:45,799   INFO  [main] HOST: PID of this Volt process is 36
+2019-03-29 08:00:45,807   INFO  [main] HOST: Command line arguments: org.voltdb.VoltDB initialize deployment /etc/config/deployment.xml voltdbroot /var/voltdb/
+2019-03-29 08:00:45,808   INFO  [main] HOST: Command line JVM arguments: -Xmx2048m -Xms2048m -XX:+AlwaysPreTouch -Djava.awt.headless=true -Djavax.security.auth.useSubjectCredsOnly=false -Dsun.net.inetaddr.ttl=300 -Dsun.net.inetaddr.negative.ttl=3600 -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:+CMSParallelRemarkEnabled -XX:+UseTLAB -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+UseCondCardMark -Dsun.rmi.dgc.server.gcInterval=9223372036854775807 -Dsun.rmi.dgc.client.gcInterval=9223372036854775807 -XX:CMSWaitDuration=120000 -XX:CMSMaxAbortablePrecleanTime=120000 -XX:+ExplicitGCInvokesConcurrent -XX:+CMSScavengeBeforeRemark -XX:+CMSClassUnloadingEnabled -Dlog4j.configuration=file:///opt/voltdb/voltdb/log4j.xml -Djava.library.path=default
+2019-03-29 08:00:45,809   INFO  [main] HOST: Command line JVM classpath: /opt/voltdb/voltdb/voltdb-8.4.jar:/opt/voltdb/lib/httpclient-4.3.6.jar:/opt/voltdb/lib/netty-tcnative-boringssl-static-2.0.20.Final.jar:/opt/voltdb/lib/jetty-servlet-9.3.21.v20170918.jar:/opt/voltdb/lib/slf4j-api-1.6.2.jar:/opt/voltdb/lib/scala-xml_2.11-1.0.2.jar:/opt/voltdb/lib/tomcat-juli.jar:/opt/voltdb/lib/metrics-core-2.2.0.jar:/opt/voltdb/lib/lz4-1.2.0.jar:/opt/voltdb/lib/avro-1.7.7.jar:/opt/voltdb/lib/commons-logging-1.1.3.jar:/opt/voltdb/lib/jackson-core-asl-1.9.13.jar:/opt/voltdb/lib/jetty-util-9.3.21.v20170918.jar:/opt/voltdb/lib/snmp4j-2.5.2.jar:/opt/voltdb/lib/kafka-clients-0.8.2.2.jar:/opt/voltdb/lib/owner-1.0.9.jar:/opt/voltdb/lib/commons-codec-1.6.jar:/opt/voltdb/lib/jetty-security-9.3.21.v20170918.jar:/opt/voltdb/lib/httpcore-4.3.3.jar:/opt/voltdb/lib/super-csv-2.1.0.jar:/opt/voltdb/lib/jetty-http-9.3.21.v20170918.jar:/opt/voltdb/lib/httpasyncclient-4.0.2.jar:/opt/voltdb/lib/commons-lang3-3.0.jar:/opt/voltdb/lib/jetty-continuation-9.3.21.v20170918.jar:/opt/voltdb/lib/jsch-0.1.51.jar:/opt/voltdb/lib/kafka_2.11-0.8.2.2.jar:/opt/voltdb/lib/felix.jar:/opt/voltdb/lib/jline-2.10.jar:/opt/voltdb/lib/jetty-server-9.3.21.v20170918.jar:/opt/voltdb/lib/httpcore-nio-4.3.2.jar:/opt/voltdb/lib/owner-java8-1.0.9.jar:/opt/voltdb/lib/tomcat-jdbc.jar:/opt/voltdb/lib/servlet-api-3.1.jar:/opt/voltdb/lib/jna.jar:/opt/voltdb/lib/vmetrics.jar:/opt/voltdb/lib/log4j-1.2.16.jar:/opt/voltdb/lib/jackson-mapper-asl-1.9.13.jar:/opt/voltdb/lib/jetty-io-9.3.21.v20170918.jar:/opt/voltdb/lib/scala-parser-combinators_2.11-1.0.2.jar:/opt/voltdb/lib/snappy-java-1.1.1.7.jar:/opt/voltdb/lib/slf4j-nop-1.6.2.jar:/opt/voltdb/lib/protobuf-java-3.4.0.jar:/opt/voltdb/lib/scala-library-2.11.5.jar:/opt/voltdb/lib/netty-all-4.1.32.Final.jar:/opt/voltdb/lib/extension/voltdb-rabbitmq.jar
+2019-03-29 08:00:45,959   INFO  [main] CONSOLE: When using the INIT command, some deployment file settings (hostcount and voltdbroot path) are ignored
+2019-03-29 08:00:45,959   INFO  [main] HOST: When using the INIT command, some deployment file settings (hostcount and voltdbroot path) are ignored
+2019-03-29 08:00:45,973   INFO  [main] HOST: Initialized VoltDB root directory /var/voltdb/voltdbroot
+2019-03-29 08:00:45,973   INFO  [main] CONSOLE: Initialized VoltDB root directory /var/voltdb/voltdbroot
+2019-03-29 08:00:48,251   INFO  [main] HOST: PID of this Volt process is 8
+2019-03-29 08:00:48,259   INFO  [main] CONSOLE: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+2019-03-29 08:00:48,259   INFO  [main] HOST: Found VoltDB license file at path: /etc/license/license.xml
+2019-03-29 08:00:48,402   INFO  [main] CONSOLE: Build: 8.4 voltdb-8.4-0-g56361f2-local Enterprise Edition
+2019-03-29 08:00:48,402   INFO  [main] CONSOLE: Licensed to: VocaLinkXDCR2
+2019-03-29 08:00:48,402   INFO  [main] HOST: Command line arguments: org.voltdb.VoltDB probe placementgroup 0 license /etc/license/license.xml voltdbroot /var/voltdb/ mesh voltdb-0.voltdb-cluster hostcount 10
+2019-03-29 08:00:48,404   INFO  [main] HOST: Command line JVM arguments: -Xmx2048m -Xms2048m -XX:+AlwaysPreTouch -Djava.awt.headless=true -Djavax.security.auth.useSubjectCredsOnly=false -Dsun.net.inetaddr.ttl=300 -Dsun.net.inetaddr.negative.ttl=3600 -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:+CMSParallelRemarkEnabled -XX:+UseTLAB -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+UseCondCardMark -Dsun.rmi.dgc.server.gcInterval=9223372036854775807 -Dsun.rmi.dgc.client.gcInterval=9223372036854775807 -XX:CMSWaitDuration=120000 -XX:CMSMaxAbortablePrecleanTime=120000 -XX:+ExplicitGCInvokesConcurrent -XX:+CMSScavengeBeforeRemark -XX:+CMSClassUnloadingEnabled -Dlog4j.configuration=file:///opt/voltdb/voltdb/log4j.xml -Djava.library.path=default
+2019-03-29 08:00:48,404   INFO  [main] HOST: Command line JVM classpath: /opt/voltdb/voltdb/voltdb-8.4.jar:/opt/voltdb/lib/httpclient-4.3.6.jar:/opt/voltdb/lib/netty-tcnative-boringssl-static-2.0.20.Final.jar:/opt/voltdb/lib/jetty-servlet-9.3.21.v20170918.jar:/opt/voltdb/lib/slf4j-api-1.6.2.jar:/opt/voltdb/lib/scala-xml_2.11-1.0.2.jar:/opt/voltdb/lib/tomcat-juli.jar:/opt/voltdb/lib/metrics-core-2.2.0.jar:/opt/voltdb/lib/lz4-1.2.0.jar:/opt/voltdb/lib/avro-1.7.7.jar:/opt/voltdb/lib/commons-logging-1.1.3.jar:/opt/voltdb/lib/jackson-core-asl-1.9.13.jar:/opt/voltdb/lib/jetty-util-9.3.21.v20170918.jar:/opt/voltdb/lib/snmp4j-2.5.2.jar:/opt/voltdb/lib/kafka-clients-0.8.2.2.jar:/opt/voltdb/lib/owner-1.0.9.jar:/opt/voltdb/lib/commons-codec-1.6.jar:/opt/voltdb/lib/jetty-security-9.3.21.v20170918.jar:/opt/voltdb/lib/httpcore-4.3.3.jar:/opt/voltdb/lib/super-csv-2.1.0.jar:/opt/voltdb/lib/jetty-http-9.3.21.v20170918.jar:/opt/voltdb/lib/httpasyncclient-4.0.2.jar:/opt/voltdb/lib/commons-lang3-3.0.jar:/opt/voltdb/lib/jetty-continuation-9.3.21.v20170918.jar:/opt/voltdb/lib/jsch-0.1.51.jar:/opt/voltdb/lib/kafka_2.11-0.8.2.2.jar:/opt/voltdb/lib/felix.jar:/opt/voltdb/lib/jline-2.10.jar:/opt/voltdb/lib/jetty-server-9.3.21.v20170918.jar:/opt/voltdb/lib/httpcore-nio-4.3.2.jar:/opt/voltdb/lib/owner-java8-1.0.9.jar:/opt/voltdb/lib/tomcat-jdbc.jar:/opt/voltdb/lib/servlet-api-3.1.jar:/opt/voltdb/lib/jna.jar:/opt/voltdb/lib/vmetrics.jar:/opt/voltdb/lib/log4j-1.2.16.jar:/opt/voltdb/lib/jackson-mapper-asl-1.9.13.jar:/opt/voltdb/lib/jetty-io-9.3.21.v20170918.jar:/opt/voltdb/lib/scala-parser-combinators_2.11-1.0.2.jar:/opt/voltdb/lib/snappy-java-1.1.1.7.jar:/opt/voltdb/lib/slf4j-nop-1.6.2.jar:/opt/voltdb/lib/protobuf-java-3.4.0.jar:/opt/voltdb/lib/scala-library-2.11.5.jar:/opt/voltdb/lib/netty-all-4.1.32.Final.jar:/opt/voltdb/lib/extension/voltdb-rabbitmq.jar
+2019-03-29 08:00:48,444   INFO  [main] CONSOLE: Loaded node-specific settings from /var/voltdb/voltdbroot/config/path.properties
+2019-03-29 08:00:48,444   INFO  [main] HOST: Loaded node-specific settings from /var/voltdb/voltdbroot/config/path.properties
+2019-03-29 08:00:48,563   INFO  [main] NETWORK: Default network thread count: 2
+2019-03-29 08:00:48,569   INFO  [main] HOST: SSL enabled for HTTP. Please point browser to HTTPS URL.
+2019-03-29 08:00:48,776   INFO  [main] HOST: SSL enabled for admin and client port. Please enable SSL on client.
+2019-03-29 08:00:48,776   INFO  [main] HOST: SSL enabled for internal inter-node communication.
+2019-03-29 08:00:48,789   INFO  [main] HOST: Beginning inter-node communication on port 3021.
+2019-03-29 08:00:48,835   INFO  [main] JOINER: SSL enabled on internal connection voltdb-0.voltdb-cluster/10.32.5.3:3021 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:00:48,879   INFO  [main] JOINER: Leader provided address 10.32.5.3:3021
+2019-03-29 08:00:48,879   INFO  [main] JOINER: Leader provided address 10.32.4.3:3021
+2019-03-29 08:00:48,903   INFO  [main] JOINER: SSL enabled on internal connection /10.32.4.3:3021 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:00:48,906   INFO  [main] JOINER: Leader provided address 10.32.48.2:3021
+2019-03-29 08:00:48,930   INFO  [main] JOINER: SSL enabled on internal connection /10.32.48.2:3021 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:00:48,932   INFO  [main] JOINER: Leader provided address 10.32.7.2:3021
+2019-03-29 08:00:48,956   INFO  [main] JOINER: SSL enabled on internal connection /10.32.7.2:3021 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:00:48,958   INFO  [main] JOINER: Leader provided address 10.32.3.3:3021
+2019-03-29 08:00:48,982   INFO  [main] JOINER: SSL enabled on internal connection /10.32.3.3:3021 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:00:48,985   INFO  [main] JOINER: Leader provided address 10.32.1.2:3021
+2019-03-29 08:00:49,011   INFO  [main] JOINER: SSL enabled on internal connection /10.32.1.2:3021 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:00:49,013   INFO  [main] JOINER: Leader provided address 10.32.6.2:3021
+2019-03-29 08:00:49,041   INFO  [main] JOINER: SSL enabled on internal connection /10.32.6.2:3021 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:00:49,044   INFO  [main] HOST: Clock skew to across all nodes in the cluster is 30
+2019-03-29 08:00:49,045   INFO  [main] NETWORK: 7 notified of host 0
+2019-03-29 08:00:49,060   INFO  [main] NETWORK: 7 notified of host 1
+2019-03-29 08:00:49,065   INFO  [main] NETWORK: 7 notified of host 2
+2019-03-29 08:00:49,069   INFO  [main] NETWORK: 7 notified of host 3
+2019-03-29 08:00:49,071   INFO  [main] NETWORK: 7 notified of host 4
+2019-03-29 08:00:49,073   INFO  [main] NETWORK: 7 notified of host 5
+2019-03-29 08:00:49,075   INFO  [main] NETWORK: 7 notified of host 6
+2019-03-29 08:00:49,098   INFO  [main] ZK-SERVER: binding to port /127.0.0.1:7181
+2019-03-29 08:00:49,106   INFO  [main] ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+2019-03-29 08:00:49,171   INFO  [ZooKeeperServer] AGREEMENT: Loaded ZK snapshot
+2019-03-29 08:00:49,175   INFO  [main] ZK-SERVER: Initiating client connection, connectString=127.0.0.1:7181 sessionTimeout=2000 watcher=org.voltcore.zk.ZKUtil$1@5dafbe45
+2019-03-29 08:00:49,181   INFO  [main-SendThread()] ZK-CLIENT: Opening socket connection to server /127.0.0.1:7181
+2019-03-29 08:00:49,181   INFO  [main-SendThread(voltdb-7:7181)] ZK-CLIENT: Socket connection established to /127.0.0.1:7181, initiating session
+2019-03-29 08:00:49,181   INFO  [NIOServerCxn.Factory:/127.0.0.1:7181] ZK-SERVER: Accepted socket connection from /127.0.0.1:39208
+2019-03-29 08:00:49,183   INFO  [NIOServerCxn.Factory:/127.0.0.1:7181] ZK-SERVER: Client attempting to establish new session at /127.0.0.1:39208
+2019-03-29 08:00:49,230   INFO  [ZooKeeperServer] ZK-SERVER: Established session 0x294ae8b80f800007 with negotiated timeout 6000 for client /127.0.0.1:39208
+2019-03-29 08:00:49,230   INFO  [main-SendThread(voltdb-7:7181)] ZK-CLIENT: Session establishment complete on server /127.0.0.1:7181, sessionid = 0x294ae8b80f800007, negotiated timeout = 6000
+2019-03-29 08:00:49,285   INFO  [Socket Joiner] HOST: Attempting to bind to internal ip 0.0.0.0/0.0.0.0:3021
+2019-03-29 08:00:49,335   INFO  [main] HOST: Host id of this node is: 7
+2019-03-29 08:00:49,335   INFO  [main] CONSOLE: Host id of this node is: 7
+2019-03-29 08:01:09,348   INFO  [Socket Joiner] JOINER: SSL enabled on internal connection /10.32.9.2:58344 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:01:09,354   INFO  [Socket Joiner] JOINER: {
+  "addAllowed": false,
+  "address": "10.32.9.2",
+  "configHash": "8e11f05e-c8c1-1c39-d947-59897ac84748",
+  "hostCount": 10,
+  "hostId": 8,
+  "isBare": true,
+  "isEnterprise": true,
+  "mayExchangeTs": true,
+  "meshHash": "45964ad6-f879-b8f6-0ae8-aac95c011d92",
+  "nodeState": "INITIALIZING",
+  "paused": false,
+  "port": 3021,
+  "safeMode": false,
+  "startAction": "PROBE",
+  "type": "PUBLISH_HOSTID",
+  "versionString": "8.4"
+}
+2019-03-29 08:01:09,355   INFO  [Socket Joiner] HOST: Received request type PUBLISH_HOSTID
+2019-03-29 08:01:09,355   INFO  [Socket Joiner] NETWORK: 7 notified of 8
+2019-03-29 08:01:09,392   INFO  [ZooKeeperServer] REJOIN: Joining site 8:-1 known  active sites 0:-1, 1:-1, 2:-1, 3:-1, 4:-1, 5:-1, 6:-1, 7:-1, 8:-1
+2019-03-29 08:01:28,759   INFO  [Socket Joiner] JOINER: SSL enabled on internal connection /10.32.2.2:40700 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:01:28,765   INFO  [Socket Joiner] JOINER: {
+  "addAllowed": false,
+  "address": "10.32.2.2",
+  "configHash": "8e11f05e-c8c1-1c39-d947-59897ac84748",
+  "hostCount": 10,
+  "hostId": 9,
+  "isBare": true,
+  "isEnterprise": true,
+  "mayExchangeTs": true,
+  "meshHash": "45964ad6-f879-b8f6-0ae8-aac95c011d92",
+  "nodeState": "INITIALIZING",
+  "paused": false,
+  "port": 3021,
+  "safeMode": false,
+  "startAction": "PROBE",
+  "type": "PUBLISH_HOSTID",
+  "versionString": "8.4"
+}
+2019-03-29 08:01:28,766   INFO  [Socket Joiner] HOST: Received request type PUBLISH_HOSTID
+2019-03-29 08:01:28,766   INFO  [Socket Joiner] NETWORK: 7 notified of 9
+2019-03-29 08:01:28,816   INFO  [main] HOST: Starting a new database cluster
+2019-03-29 08:01:28,816   INFO  [main] CONSOLE: Starting a new database cluster
+2019-03-29 08:01:28,838   INFO  [ZooKeeperServer] REJOIN: Joining site 9:-1 known  active sites 0:-1, 1:-1, 2:-1, 3:-1, 4:-1, 5:-1, 6:-1, 7:-1, 8:-1, 9:-1
+2019-03-29 08:01:28,966   INFO  [main] HOST: Deployment configuration pulled from other cluster node.
+2019-03-29 08:01:28,972   INFO  [main] HOST: Dead host timeout set to 90000 milliseconds
+2019-03-29 08:01:28,972   INFO  [main] HOST: Elastic duration set to 50 milliseconds
+2019-03-29 08:01:28,972   INFO  [main] HOST: Elastic throughput set to 2 mb/s
+2019-03-29 08:01:28,972   INFO  [main] HOST: Max temptable size set to 100 mb
+2019-03-29 08:01:28,972   INFO  [main] HOST: Snapshot priority set to 6 [0 - 10]
+2019-03-29 08:01:28,972   INFO  [main] HOST: Query timeout set to 10000 milliseconds
+2019-03-29 08:01:28,972   WARN  [main] CONSOLE: User authentication is not enabled. The database is accessible and could be modified or shut down by anyone on the network.
+2019-03-29 08:01:28,979   INFO  [main] HOST: Configured connection for DR replica role to host 35.237.114.1
+2019-03-29 08:01:29,845   INFO  [main] HOST: Framework properties are: {org.osgi.framework.system.packages.extra=com.google_voltpatches.common.base;version=1.0.0,com.google_voltpatches.common.collect;version=1.0.0,com.google_voltpatches.common.io;version=1.0.0,com.google_voltpatches.common.net;version=1.0.0,com.google_voltpatches.common.util.concurrent;version=1.0.0,com.yammer.metrics;version=1.0.0,com.yammer.metrics.core;version=1.0.0,com.yammer.metrics.reporting;version=1.0.0,com.yammer.metrics.stats;version=1.0.0,com.yammer.metrics.util;version=1.0.0,jsr166y;version=1.0.0,org.apache.log4j;version=1.0.0,org.slf4j;version=1.0.0,org.voltcore.network;version=1.0.0,org.voltcore.logging;version=1.0.0,org.voltcore.utils;version=1.0.0,org.voltdb;include:="VoltType",version=1.0.0,org.voltdb.client;version=1.0.0,org.voltdb.common;exclude="Permission",version=1.0.0,org.voltdb.importer;version=1.0.0,org.voltdb.importer.formatter;version=1.0.0,org.voltdb.types;version=1.0.0, org.osgi.framework.storage.clean=onFirstInit, felix.cache.rootdir=/var/voltdb/voltdbroot/.bundles-cache, felix.cache.locking=false}
+2019-03-29 08:01:29,989   INFO  [main] LOGGING: Path /var/voltdb/voltdbroot/command_log/segments does not exist
+2019-03-29 08:01:29,989   INFO  [main] LOGGING: No command log to replay on this host
+2019-03-29 08:01:31,771   INFO  [main] HOST: Configured connection for DR replica role to host 35.237.114.1
+2019-03-29 08:01:31,778   INFO  [main] HOST: Export target VOLTDB_XDCR_CONFLICTS is configured and enabled with type=FILE
+2019-03-29 08:01:31,779   INFO  [main] HOST: Export target VOLTDB_XDCR_CONFLICTS configuration properties are: 
+2019-03-29 08:01:31,779   INFO  [main] HOST: Export Configuration Property NAME=type VALUE=csv
+2019-03-29 08:01:31,779   INFO  [main] HOST: Export Configuration Property NAME=nonce VALUE=LOG
+2019-03-29 08:01:31,779   INFO  [main] HOST: Export Configuration Property NAME=outdir VALUE=xdcr_conflicts
+2019-03-29 08:01:31,779   INFO  [main] HOST: Export Configuration Property NAME=replicated VALUE=true
+2019-03-29 08:01:31,779   INFO  [main] HOST: Export Configuration Property NAME=skipinternals VALUE=true
+2019-03-29 08:01:31,808   INFO  [main] IMPORT: Final importer count:0
+2019-03-29 08:01:31,808   INFO  [main] IMPORT: Currently loaded importer modules: [], types: []
+2019-03-29 08:01:31,816   INFO  [main] EXPORT: Export has compression enabled in /var/voltdb/voltdbroot/export_overflow
+2019-03-29 08:01:31,817   INFO  [main] EXPORT: Export is enabled and can overflow to /var/voltdb/voltdbroot/export_overflow.
+2019-03-29 08:01:31,834   INFO  [main] HOST: Loading native VoltDB code (voltdb-8.4). A confirmation message will follow if the loading is successful.
+2019-03-29 08:01:31,889   INFO  [main] HOST: Successfully loaded native VoltDB library voltdb-8.4.
+2019-03-29 08:01:32,097   INFO  [main] EXPORT: Active Targets are: [VOLTDB_XDCR_CONFLICTS]
+2019-03-29 08:01:32,158   INFO  [main] CONSOLE: Initializing the database and command logs. This may take a moment...
+2019-03-29 08:01:33,298   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:0:0 for partition:0
+2019-03-29 08:01:33,300   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:0:1 for partition:1
+2019-03-29 08:01:33,357   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:0:2 for partition:2
+2019-03-29 08:01:33,358   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:0:3 for partition:3
+2019-03-29 08:01:33,359   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:0:4 for partition:4
+2019-03-29 08:01:33,450   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:0:5 for partition:5
+2019-03-29 08:01:33,544   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:1:0 for partition:6
+2019-03-29 08:01:33,599   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:1:1 for partition:7
+2019-03-29 08:01:33,643   INFO  [main] TM: Setting maximum size of MPI read pool to: 20
+2019-03-29 08:01:33,684   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:1:2 for partition:8
+2019-03-29 08:01:33,684   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:1:3 for partition:9
+2019-03-29 08:01:33,789   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:1:4 for partition:10
+2019-03-29 08:01:33,790   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:1:5 for partition:11
+2019-03-29 08:01:33,842   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:2:0 for partition:12
+2019-03-29 08:01:33,843   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:2:1 for partition:13
+2019-03-29 08:01:33,843   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:2:2 for partition:14
+2019-03-29 08:01:33,911   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:2:3 for partition:15
+2019-03-29 08:01:33,912   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:2:4 for partition:16
+2019-03-29 08:01:33,975   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:2:5 for partition:17
+2019-03-29 08:01:34,040   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:3:0 for partition:18
+2019-03-29 08:01:34,041   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:3:1 for partition:19
+2019-03-29 08:01:34,084   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:3:2 for partition:20
+2019-03-29 08:01:34,176   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:3:3 for partition:21
+2019-03-29 08:01:34,233   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:3:4 for partition:22
+2019-03-29 08:01:34,288   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:3:5 for partition:23
+2019-03-29 08:01:34,348   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:4:0 for partition:24
+2019-03-29 08:01:34,348   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:4:1 for partition:25
+2019-03-29 08:01:34,406   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:4:2 for partition:26
+2019-03-29 08:01:34,468   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:4:3 for partition:27
+2019-03-29 08:01:34,551   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:4:4 for partition:28
+2019-03-29 08:01:34,650   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:4:5 for partition:29
+2019-03-29 08:01:34,725   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:5:0 for partition:30
+2019-03-29 08:01:34,726   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:5:1 for partition:31
+2019-03-29 08:01:34,863   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:5:2 for partition:32
+2019-03-29 08:01:34,958   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:5:3 for partition:33
+2019-03-29 08:01:34,958   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:5:4 for partition:34
+2019-03-29 08:01:34,997   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:5:5 for partition:35
+2019-03-29 08:01:35,058   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:6:0 for partition:36
+2019-03-29 08:01:35,151   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:6:1 for partition:37
+2019-03-29 08:01:35,303   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:6:2 for partition:38
+2019-03-29 08:01:35,378   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:6:3 for partition:39
+2019-03-29 08:01:35,378   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:6:4 for partition:40
+2019-03-29 08:01:35,383   INFO  [LeaderCache] REPAIR: SP 7:0 for partition 42 found (including self) 1 surviving replicas to repair.  Survivors: 7:0
+2019-03-29 08:01:35,400   INFO  [LeaderCache] TM: SP 7:0 for partition 42 finished leader promotion. Took 38 ms.
+2019-03-29 08:01:35,487   INFO  [LeaderCache] REPAIR: SP 7:1 for partition 43 found (including self) 1 surviving replicas to repair.  Survivors: 7:1
+2019-03-29 08:01:35,488   INFO  [LeaderCache] REPAIR: SP 7:2 for partition 44 found (including self) 1 surviving replicas to repair.  Survivors: 7:2
+2019-03-29 08:01:35,488   INFO  [LeaderCache] TM: SP 7:1 for partition 43 finished leader promotion. Took 34 ms.
+2019-03-29 08:01:35,488   INFO  [LeaderCache] TM: SP 7:2 for partition 44 finished leader promotion. Took 34 ms.
+2019-03-29 08:01:35,495   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:6:5 for partition:41
+2019-03-29 08:01:35,557   INFO  [LeaderCache] REPAIR: SP 7:3 for partition 45 found (including self) 1 surviving replicas to repair.  Survivors: 7:3
+2019-03-29 08:01:35,558   INFO  [LeaderCache] TM: SP 7:3 for partition 45 finished leader promotion. Took 21 ms.
+2019-03-29 08:01:35,560   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:7:0 for partition:42
+2019-03-29 08:01:35,560   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:7:1 for partition:43
+2019-03-29 08:01:35,560   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:7:2 for partition:44
+2019-03-29 08:01:35,620   INFO  [LeaderCache] REPAIR: SP 7:4 for partition 46 found (including self) 1 surviving replicas to repair.  Survivors: 7:4
+2019-03-29 08:01:35,621   INFO  [LeaderCache] TM: SP 7:4 for partition 46 finished leader promotion. Took 8 ms.
+2019-03-29 08:01:35,640   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:7:3 for partition:45
+2019-03-29 08:01:35,677   INFO  [LeaderCache] REPAIR: SP 7:5 for partition 47 found (including self) 1 surviving replicas to repair.  Survivors: 7:5
+2019-03-29 08:01:35,678   INFO  [LeaderCache] TM: SP 7:5 for partition 47 finished leader promotion. Took 34 ms.
+2019-03-29 08:01:35,789   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:7:4 for partition:46
+2019-03-29 08:01:35,818   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:7:5 for partition:47
+2019-03-29 08:01:36,026   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:8:0 for partition:48
+2019-03-29 08:01:36,026   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:8:1 for partition:49
+2019-03-29 08:01:36,026   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:8:2 for partition:50
+2019-03-29 08:01:36,227   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:8:3 for partition:51
+2019-03-29 08:01:36,301   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:8:4 for partition:52
+2019-03-29 08:01:36,301   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:9:0 for partition:54
+2019-03-29 08:01:36,442   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:8:5 for partition:53
+2019-03-29 08:01:36,443   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:9:1 for partition:55
+2019-03-29 08:01:36,615   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:9:2 for partition:56
+2019-03-29 08:01:36,834   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:9:3 for partition:57
+2019-03-29 08:01:36,834   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:9:4 for partition:58
+2019-03-29 08:01:36,923   INFO  [LeaderCache] HOST: [Cartographer MP] Sending leader change notification with new leader:
+2019-03-29 08:01:36,923   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:1:6 for partition:16383
+2019-03-29 08:01:36,932   INFO  [LeaderCache] HOST: [Cartographer] Sending leader change notification with new leader:9:5 for partition:59
+2019-03-29 08:01:36,956   INFO  [main] HOST: Database start action is Create.
+2019-03-29 08:01:36,956   INFO  [main] HOST: Listening for native wire protocol clients on port 21212.
+2019-03-29 08:01:36,956   INFO  [main] HOST: Listening for admin wire protocol clients on port 21211.
+2019-03-29 08:01:36,956   INFO  [main] HOST: Local machine HTTP monitoring is listening on port 8443.
+2019-03-29 08:01:36,956   INFO  [main] HOST: Json API over HTTP enabled at path /api/1.0/, listening on port 8443.
+2019-03-29 08:01:36,956   INFO  [main] HOST: OpenSsl is enabled
+2019-03-29 08:01:36,956   INFO  [main] HOST: Maximum usable Java heap set to 1981 mb.
+2019-03-29 08:01:36,956   INFO  [main] HOST: Minimum required Java heap for catalog and server config is 404 MB.
+2019-03-29 08:01:36,966   INFO  [main] HOST: Cluster has 10 hosts with leader hostname: "localhost". 6 local sites count. K = 0.
+2019-03-29 08:01:36,966   INFO  [main] HOST: The entire cluster has 1 copy of each of the 60 logical partitions.
+2019-03-29 08:01:36,966   INFO  [main] HOST: Detection of network partitions in the cluster is enabled.
+2019-03-29 08:01:36,966   INFO  [main] HOST: Client authentication is not enabled. Anonymous clients accepted.
+2019-03-29 08:01:36,966   INFO  [main] HOST: No schedule set for automated snapshots.
+2019-03-29 08:01:36,966   INFO  [main] HOST: Using "/var/voltdb/voltdbroot" for voltdbroot directory.
+2019-03-29 08:01:36,966   INFO  [main] HOST: CPU INFO:         4 Cores, 1 Sockets, 8 Hardware Threads
+2019-03-29 08:01:36,966   INFO  [main] HOST: CPU DESC:         Intel(R) Xeon(R) CPU @ 2.30GHz 46080 KB cache
+2019-03-29 08:01:36,966   INFO  [main] HOST: HOST MEMORY (MB): 52327
+2019-03-29 08:01:36,966   INFO  [main] HOST: OS PROFILE:       Linux 4.15.0-1026-gcp amd64 en_US
+2019-03-29 08:01:36,966   INFO  [main] HOST: DB VERSION:       8.4
+2019-03-29 08:01:36,966   INFO  [main] HOST: JAVA VERSION:     1.8.0_181
+2019-03-29 08:01:36,966   INFO  [main] HOST: JAVA RUNTIME:     OpenJDK Runtime Environment (1.8.0_181-8u181-b13-2~deb9u1-b13)
+2019-03-29 08:01:36,966   INFO  [main] HOST: JAVA VM:          OpenJDK 64-Bit Server VM (25.181-b13, mixed mode)
+2019-03-29 08:01:36,966   INFO  [main] HOST: DR initializing with Cluster Id 2. The DR cluster was first started at Fri Mar 29 07:52:29 GMT+00:00 2019.
+2019-03-29 08:01:37,003   INFO  [main] HOST: About to list cluster interfaces for all nodes with format [ip1 ip2 ... ipN] client-port,admin-port,http-port
+2019-03-29 08:01:37,003   INFO  [main] HOST:   Host id: 0 with interfaces: 10.32.5.3 21212,21211,8443 [PEER]
+2019-03-29 08:01:37,003   INFO  [main] HOST:   Host id: 1 with interfaces: 10.32.4.3 21212,21211,8443 [PEER]
+2019-03-29 08:01:37,003   INFO  [main] HOST:   Host id: 2 with interfaces: 10.32.48.2 21212,21211,8443 [PEER]
+2019-03-29 08:01:37,003   INFO  [main] HOST:   Host id: 3 with interfaces: 10.32.7.2 21212,21211,8443 [PEER]
+2019-03-29 08:01:37,003   INFO  [main] HOST:   Host id: 4 with interfaces: 10.32.3.3 21212,21211,8443 [PEER]
+2019-03-29 08:01:37,003   INFO  [main] HOST:   Host id: 5 with interfaces: 10.32.1.2 21212,21211,8443 [PEER]
+2019-03-29 08:01:37,003   INFO  [main] HOST:   Host id: 6 with interfaces: 10.32.6.2 21212,21211,8443 [PEER]
+2019-03-29 08:01:37,003   INFO  [main] HOST:   Host id: 7 with interfaces: 10.32.8.2 21212,21211,8443 [SELF]
+2019-03-29 08:01:37,003   INFO  [main] HOST:   Host id: 8 with interfaces: 10.32.9.2 21212,21211,8443 [PEER]
+2019-03-29 08:01:37,003   INFO  [main] HOST:   Host id: 9 with interfaces: 10.32.2.2 21212,21211,8443 [PEER]
+2019-03-29 08:01:37,003   WARN  [main] CONSOLE: This is not a highly available cluster. K-Safety is set to 0.
+2019-03-29 08:01:37,440   INFO  [Thread-14] HOST: Logging config info
+2019-03-29 08:01:38,130   INFO  [SSM Daemon] DR: SMI PER_HOST_DR_STATES/DR_PRODUCER_STATES/Host_7_v0: Initialized (existing) with State NO_SNAPSHOT:NO_CONVERSATION_CHANGE, 0, 0, -1, [], []
+2019-03-29 08:01:38,733   INFO  [Thread-15] LOGGING: At end of command log replay: TaskPermitBucket[ availablePermits: 3000, allowedThrough size is: 0, oustandingSentinels: {}, waiting for response queue lenghts: {}]
+2019-03-29 08:01:39,619   INFO  [SnapshotDaemon] LOGGING: Snapshot daemon grooming truncation snapshots
+2019-03-29 08:01:39,620   INFO  [SnapshotDaemon] LOGGING: Found most recent successful snapshot txnid (1:16383) path /var/voltdb/voltdbroot/command_log_snapshot nonce 1553846498764
+2019-03-29 08:01:39,622   INFO  [SnapshotCompletionMonitor] LOGGING: The log segment pool is being grown from 0 to 1 segments with a segment size of 128 megabytes
+2019-03-29 08:01:40,151   INFO  [SnapshotCompletionMonitor] LOGGING: Finished adding segment in 528194 microseconds
+2019-03-29 08:01:40,226   INFO  [SnapshotCompletionMonitor] LOGGING: Asynchronous command logging is enabled.
+2019-03-29 08:01:40,226   INFO  [SnapshotCompletionMonitor] LOGGING: Command log will fsync on the first of 200ms or 2147483647 unsynced txns.
+2019-03-29 08:01:40,226   INFO  [SnapshotCompletionMonitor] LOGGING: 1 128mb command log segments stored at: /var/voltdb/voltdbroot/command_log
+2019-03-29 08:01:40,226   INFO  [SnapshotCompletionMonitor] LOGGING: Internal snapshot path: /var/voltdb/voltdbroot/command_log_snapshot
+2019-03-29 08:01:40,231   INFO  [Command Log IO] LOGGING: Loaned out log segment /var/voltdb/voltdbroot/command_log/segments/loaned.1 took 3660 microseconds
+2019-03-29 08:01:40,239   INFO  [Command Log Segment Allocator] LOGGING: Finished adding segment in 9262 microseconds
+2019-03-29 08:01:40,636   INFO  [SnapshotCompletionMonitor] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:01:40,637   INFO  [SnapshotCompletionMonitor] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:01:40,637   INFO  [SnapshotCompletionMonitor] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:01:40,642   INFO  [DRProducer] DR: DR Listening on all local interfaces, port 5555
+2019-03-29 08:01:40,678   INFO  [SnapshotCompletionMonitor] CONSOLE: Server Operational State is: NORMAL
+2019-03-29 08:01:40,678   INFO  [SnapshotCompletionMonitor] CONSOLE: Server completed initialization.
+2019-03-29 08:01:40,688   INFO  [DRConsumerGateway] DRAGENT: Established DR client connection to 35.237.114.1:5555
+2019-03-29 08:01:40,842   INFO  [DRConsumerGateway] DRAGENT: After negotiation the DR protocol version has been set to 8
+2019-03-29 08:01:40,910   WARN  [DRConsumerGateway] DRAGENT: Error connecting to mesh : Missing DR table T_TRANSACTION on local cluster
+Inconsistent DR table schemas across clusters prevents replication of those tables.
+2019-03-29 08:01:40,910   WARN  [DRConsumerGateway] DRAGENT: Failed to connect to cluster mesh. Retrying in 10000 ms
+2019-03-29 08:01:50,951   INFO  [DRConsumerGateway] DRAGENT: Established DR client connection to 35.237.114.1:5555
+2019-03-29 08:01:50,990   INFO  [DRConsumerGateway] DRAGENT: After negotiation the DR protocol version has been set to 8
+2019-03-29 08:01:51,056   WARN  [DRConsumerGateway] DRAGENT: Error connecting to mesh : Missing DR table T_TRANSACTION on local cluster
+Inconsistent DR table schemas across clusters prevents replication of those tables.
+2019-03-29 08:01:51,057   WARN  [DRConsumerGateway] DRAGENT: Failed to connect to cluster mesh. Retrying in 10000 ms
+2019-03-29 08:02:01,097   INFO  [DRConsumerGateway] DRAGENT: Established DR client connection to 35.237.114.1:5555
+2019-03-29 08:02:01,149   INFO  [DRConsumerGateway] DRAGENT: After negotiation the DR protocol version has been set to 8
+2019-03-29 08:02:01,195   WARN  [DRConsumerGateway] DRAGENT: Error connecting to mesh : Missing DR table T_TRANSACTION on local cluster
+Inconsistent DR table schemas across clusters prevents replication of those tables.
+2019-03-29 08:02:01,195   WARN  [DRConsumerGateway] DRAGENT: Failed to connect to cluster mesh. Retrying in 10000 ms
+2019-03-29 08:02:03,583   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 1176, uncompressed size = 1071)
+2019-03-29 08:02:03,741   INFO  [SP 45 Site - 7:3] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:03,751   INFO  [SP 45 Site - 7:3] IMPORT: Final importer count:0
+2019-03-29 08:02:03,752   INFO  [SP 45 Site - 7:3] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:03,753   INFO  [SP 45 Site - 7:3] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:03,753   INFO  [SP 45 Site - 7:3] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:04,248   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 228, uncompressed size = 268)
+2019-03-29 08:02:04,402   INFO  [SP 46 Site - 7:4] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:04,418   INFO  [SP 46 Site - 7:4] IMPORT: Final importer count:0
+2019-03-29 08:02:04,418   INFO  [SP 46 Site - 7:4] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:04,418   INFO  [SP 46 Site - 7:4] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:04,418   INFO  [SP 46 Site - 7:4] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:04,894   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 228, uncompressed size = 268)
+2019-03-29 08:02:05,041   INFO  [SP 46 Site - 7:4] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:05,046   INFO  [SP 46 Site - 7:4] IMPORT: Final importer count:0
+2019-03-29 08:02:05,047   INFO  [SP 46 Site - 7:4] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:05,047   INFO  [SP 46 Site - 7:4] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:05,047   INFO  [SP 46 Site - 7:4] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:05,538   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 228, uncompressed size = 268)
+2019-03-29 08:02:05,702   INFO  [SP 45 Site - 7:3] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:05,710   INFO  [SP 45 Site - 7:3] IMPORT: Final importer count:0
+2019-03-29 08:02:05,710   INFO  [SP 45 Site - 7:3] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:05,710   INFO  [SP 45 Site - 7:3] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:05,710   INFO  [SP 45 Site - 7:3] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:06,174   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 232, uncompressed size = 268)
+2019-03-29 08:02:06,330   INFO  [SP 45 Site - 7:3] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:06,336   INFO  [SP 45 Site - 7:3] IMPORT: Final importer count:0
+2019-03-29 08:02:06,336   INFO  [SP 45 Site - 7:3] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:06,337   INFO  [SP 45 Site - 7:3] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:06,337   INFO  [SP 45 Site - 7:3] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:06,804   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 232, uncompressed size = 268)
+2019-03-29 08:02:06,949   INFO  [SP 45 Site - 7:3] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:06,954   INFO  [SP 45 Site - 7:3] IMPORT: Final importer count:0
+2019-03-29 08:02:06,954   INFO  [SP 45 Site - 7:3] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:06,954   INFO  [SP 45 Site - 7:3] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:06,954   INFO  [SP 45 Site - 7:3] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:07,498   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 228, uncompressed size = 268)
+2019-03-29 08:02:07,657   INFO  [SP 44 Site - 7:2] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:07,662   INFO  [SP 44 Site - 7:2] IMPORT: Final importer count:0
+2019-03-29 08:02:07,663   INFO  [SP 44 Site - 7:2] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:07,663   INFO  [SP 44 Site - 7:2] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:07,663   INFO  [SP 44 Site - 7:2] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:08,158   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 228, uncompressed size = 268)
+2019-03-29 08:02:08,329   INFO  [SP 47 Site - 7:5] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:08,333   INFO  [SP 47 Site - 7:5] IMPORT: Final importer count:0
+2019-03-29 08:02:08,334   INFO  [SP 47 Site - 7:5] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:08,334   INFO  [SP 47 Site - 7:5] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:08,334   INFO  [SP 47 Site - 7:5] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:08,861   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 1280, uncompressed size = 1151)
+2019-03-29 08:02:09,010   INFO  [SP 45 Site - 7:3] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:09,015   INFO  [SP 45 Site - 7:3] IMPORT: Final importer count:0
+2019-03-29 08:02:09,016   INFO  [SP 45 Site - 7:3] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:09,016   INFO  [SP 45 Site - 7:3] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:09,016   INFO  [SP 45 Site - 7:3] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:09,515   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 1280, uncompressed size = 1151)
+2019-03-29 08:02:09,668   INFO  [SP 45 Site - 7:3] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:09,674   INFO  [SP 45 Site - 7:3] IMPORT: Final importer count:0
+2019-03-29 08:02:09,674   INFO  [SP 45 Site - 7:3] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:09,674   INFO  [SP 45 Site - 7:3] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:09,674   INFO  [SP 45 Site - 7:3] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:10,145   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 2064, uncompressed size = 2884)
+2019-03-29 08:02:10,307   INFO  [SP 46 Site - 7:4] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:10,313   INFO  [SP 46 Site - 7:4] IMPORT: Final importer count:0
+2019-03-29 08:02:10,313   INFO  [SP 46 Site - 7:4] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:10,313   INFO  [SP 46 Site - 7:4] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:10,313   INFO  [SP 46 Site - 7:4] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:10,783   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 1556, uncompressed size = 1483)
+2019-03-29 08:02:11,011   INFO  [SP 43 Site - 7:1] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:11,022   INFO  [SP 43 Site - 7:1] IMPORT: Final importer count:0
+2019-03-29 08:02:11,022   INFO  [SP 43 Site - 7:1] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:11,022   INFO  [SP 43 Site - 7:1] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:11,022   INFO  [SP 43 Site - 7:1] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:11,236   INFO  [DRConsumerGateway] DRAGENT: Established DR client connection to 35.237.114.1:5555
+2019-03-29 08:02:11,276   INFO  [DRConsumerGateway] DRAGENT: After negotiation the DR protocol version has been set to 8
+2019-03-29 08:02:11,317   WARN  [DRConsumerGateway] DRAGENT: Error connecting to mesh : Missing DR table T_TRANSACTION on local cluster
+Inconsistent DR table schemas across clusters prevents replication of those tables.
+2019-03-29 08:02:11,317   WARN  [DRConsumerGateway] DRAGENT: Failed to connect to cluster mesh. Retrying in 10000 ms
+2019-03-29 08:02:11,559   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 1892, uncompressed size = 2070)
+2019-03-29 08:02:11,706   INFO  [SP 47 Site - 7:5] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:11,710   INFO  [SP 47 Site - 7:5] IMPORT: Final importer count:0
+2019-03-29 08:02:11,711   INFO  [SP 47 Site - 7:5] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:11,711   INFO  [SP 47 Site - 7:5] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:11,711   INFO  [SP 47 Site - 7:5] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:12,178   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 1912, uncompressed size = 2076)
+2019-03-29 08:02:12,348   INFO  [SP 43 Site - 7:1] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:12,352   INFO  [SP 43 Site - 7:1] IMPORT: Final importer count:0
+2019-03-29 08:02:12,352   INFO  [SP 43 Site - 7:1] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:12,352   INFO  [SP 43 Site - 7:1] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:12,352   INFO  [SP 43 Site - 7:1] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:12,821   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 2272, uncompressed size = 3024)
+2019-03-29 08:02:12,981   INFO  [SP 44 Site - 7:2] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:12,985   INFO  [SP 44 Site - 7:2] IMPORT: Final importer count:0
+2019-03-29 08:02:12,985   INFO  [SP 44 Site - 7:2] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:12,985   INFO  [SP 44 Site - 7:2] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:12,985   INFO  [SP 44 Site - 7:2] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:13,454   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 1720, uncompressed size = 1623)
+2019-03-29 08:02:13,628   INFO  [SP 47 Site - 7:5] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:13,634   INFO  [SP 47 Site - 7:5] IMPORT: Final importer count:0
+2019-03-29 08:02:13,634   INFO  [SP 47 Site - 7:5] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:13,634   INFO  [SP 47 Site - 7:5] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:13,634   INFO  [SP 47 Site - 7:5] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:14,110   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 2012, uncompressed size = 2182)
+2019-03-29 08:02:14,320   INFO  [SP 43 Site - 7:1] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:14,325   INFO  [SP 43 Site - 7:1] IMPORT: Final importer count:0
+2019-03-29 08:02:14,325   INFO  [SP 43 Site - 7:1] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:14,325   INFO  [SP 43 Site - 7:1] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:14,325   INFO  [SP 43 Site - 7:1] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:14,796   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 2020, uncompressed size = 2160)
+2019-03-29 08:02:14,957   INFO  [SP 44 Site - 7:2] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:14,961   INFO  [SP 44 Site - 7:2] IMPORT: Final importer count:0
+2019-03-29 08:02:14,962   INFO  [SP 44 Site - 7:2] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:14,962   INFO  [SP 44 Site - 7:2] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:14,962   INFO  [SP 44 Site - 7:2] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:15,502   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 4528, uncompressed size = 5605)
+2019-03-29 08:02:15,660   INFO  [SP 44 Site - 7:2] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:15,665   INFO  [SP 44 Site - 7:2] IMPORT: Final importer count:0
+2019-03-29 08:02:15,665   INFO  [SP 44 Site - 7:2] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:15,665   INFO  [SP 44 Site - 7:2] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:15,665   INFO  [SP 44 Site - 7:2] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:16,163   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 2048, uncompressed size = 2885)
+2019-03-29 08:02:16,325   INFO  [SP 43 Site - 7:1] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:16,329   INFO  [SP 43 Site - 7:1] IMPORT: Final importer count:0
+2019-03-29 08:02:16,330   INFO  [SP 43 Site - 7:1] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:16,330   INFO  [SP 43 Site - 7:1] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:16,330   INFO  [SP 43 Site - 7:1] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:16,814   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 3124, uncompressed size = 4458)
+2019-03-29 08:02:16,974   INFO  [SP 44 Site - 7:2] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:16,978   INFO  [SP 44 Site - 7:2] IMPORT: Final importer count:0
+2019-03-29 08:02:16,979   INFO  [SP 44 Site - 7:2] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:16,979   INFO  [SP 44 Site - 7:2] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:16,979   INFO  [SP 44 Site - 7:2] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:17,454   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 2048, uncompressed size = 2885)
+2019-03-29 08:02:17,609   INFO  [SP 46 Site - 7:4] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:17,613   INFO  [SP 46 Site - 7:4] IMPORT: Final importer count:0
+2019-03-29 08:02:17,614   INFO  [SP 46 Site - 7:4] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:17,614   INFO  [SP 46 Site - 7:4] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:17,614   INFO  [SP 46 Site - 7:4] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:18,082   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 228, uncompressed size = 268)
+2019-03-29 08:02:18,233   INFO  [SP 44 Site - 7:2] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:18,236   INFO  [SP 44 Site - 7:2] IMPORT: Final importer count:0
+2019-03-29 08:02:18,236   INFO  [SP 44 Site - 7:2] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:18,236   INFO  [SP 44 Site - 7:2] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:18,237   INFO  [SP 44 Site - 7:2] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:18,714   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 228, uncompressed size = 268)
+2019-03-29 08:02:18,862   INFO  [SP 47 Site - 7:5] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:18,867   INFO  [SP 47 Site - 7:5] IMPORT: Final importer count:0
+2019-03-29 08:02:18,867   INFO  [SP 47 Site - 7:5] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:18,867   INFO  [SP 47 Site - 7:5] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:18,867   INFO  [SP 47 Site - 7:5] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:19,349   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 1712, uncompressed size = 1479)
+2019-03-29 08:02:19,502   INFO  [SP 46 Site - 7:4] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:19,506   INFO  [SP 46 Site - 7:4] IMPORT: Final importer count:0
+2019-03-29 08:02:19,506   INFO  [SP 46 Site - 7:4] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:19,506   INFO  [SP 46 Site - 7:4] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:19,506   INFO  [SP 46 Site - 7:4] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:19,979   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 1724, uncompressed size = 1487)
+2019-03-29 08:02:20,128   INFO  [SP 47 Site - 7:5] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:20,132   INFO  [SP 47 Site - 7:5] IMPORT: Final importer count:0
+2019-03-29 08:02:20,132   INFO  [SP 47 Site - 7:5] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:20,132   INFO  [SP 47 Site - 7:5] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:20,132   INFO  [SP 47 Site - 7:5] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:20,677   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 2952, uncompressed size = 4754)
+2019-03-29 08:02:20,839   INFO  [SP 43 Site - 7:1] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:20,843   INFO  [SP 43 Site - 7:1] IMPORT: Final importer count:0
+2019-03-29 08:02:20,843   INFO  [SP 43 Site - 7:1] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:20,844   INFO  [SP 43 Site - 7:1] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:20,844   INFO  [SP 43 Site - 7:1] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:21,309   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 2272, uncompressed size = 2357)
+2019-03-29 08:02:21,357   INFO  [DRConsumerGateway] DRAGENT: Established DR client connection to 35.237.114.1:5555
+2019-03-29 08:02:21,397   INFO  [DRConsumerGateway] DRAGENT: After negotiation the DR protocol version has been set to 8
+2019-03-29 08:02:21,438   WARN  [DRConsumerGateway] DRAGENT: Error connecting to mesh : Missing DR table T_TRANSACTION on local cluster
+Inconsistent DR table schemas across clusters prevents replication of those tables.
+2019-03-29 08:02:21,438   WARN  [DRConsumerGateway] DRAGENT: Failed to connect to cluster mesh. Retrying in 10000 ms
+2019-03-29 08:02:21,465   INFO  [SP 44 Site - 7:2] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:21,469   INFO  [SP 44 Site - 7:2] IMPORT: Final importer count:0
+2019-03-29 08:02:21,470   INFO  [SP 44 Site - 7:2] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:21,470   INFO  [SP 44 Site - 7:2] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:21,470   INFO  [SP 44 Site - 7:2] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:22,017   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 2300, uncompressed size = 2308)
+2019-03-29 08:02:22,181   INFO  [SP 45 Site - 7:3] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:22,185   INFO  [SP 45 Site - 7:3] IMPORT: Final importer count:0
+2019-03-29 08:02:22,185   INFO  [SP 45 Site - 7:3] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:22,185   INFO  [SP 45 Site - 7:3] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:22,185   INFO  [SP 45 Site - 7:3] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:22,681   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 3124, uncompressed size = 4672)
+2019-03-29 08:02:22,855   INFO  [SP 46 Site - 7:4] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:22,858   INFO  [SP 46 Site - 7:4] IMPORT: Final importer count:0
+2019-03-29 08:02:22,859   INFO  [SP 46 Site - 7:4] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:22,859   INFO  [SP 46 Site - 7:4] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:22,859   INFO  [SP 46 Site - 7:4] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:23,408   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 2472, uncompressed size = 2556)
+2019-03-29 08:02:23,569   INFO  [SP 43 Site - 7:1] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:23,572   INFO  [SP 43 Site - 7:1] IMPORT: Final importer count:0
+2019-03-29 08:02:23,573   INFO  [SP 43 Site - 7:1] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:23,573   INFO  [SP 43 Site - 7:1] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:23,573   INFO  [SP 43 Site - 7:1] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:24,047   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 2508, uncompressed size = 2566)
+2019-03-29 08:02:24,204   INFO  [SP 45 Site - 7:3] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:24,207   INFO  [SP 45 Site - 7:3] IMPORT: Final importer count:0
+2019-03-29 08:02:24,208   INFO  [SP 45 Site - 7:3] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:24,208   INFO  [SP 45 Site - 7:3] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:24,208   INFO  [SP 45 Site - 7:3] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:24,714   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 6188, uncompressed size = 7441)
+2019-03-29 08:02:24,863   INFO  [SP 46 Site - 7:4] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:24,866   INFO  [SP 46 Site - 7:4] IMPORT: Final importer count:0
+2019-03-29 08:02:24,867   INFO  [SP 46 Site - 7:4] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:24,867   INFO  [SP 46 Site - 7:4] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:24,867   INFO  [SP 46 Site - 7:4] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:25,361   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 2612, uncompressed size = 3247)
+2019-03-29 08:02:25,515   INFO  [SP 42 Site - 7:0] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:25,519   INFO  [SP 42 Site - 7:0] IMPORT: Final importer count:0
+2019-03-29 08:02:25,519   INFO  [SP 42 Site - 7:0] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:25,519   INFO  [SP 42 Site - 7:0] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:25,519   INFO  [SP 42 Site - 7:0] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:26,000   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 228, uncompressed size = 268)
+2019-03-29 08:02:26,148   INFO  [SP 47 Site - 7:5] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:26,152   INFO  [SP 47 Site - 7:5] IMPORT: Final importer count:0
+2019-03-29 08:02:26,153   INFO  [SP 47 Site - 7:5] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:26,153   INFO  [SP 47 Site - 7:5] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:26,153   INFO  [SP 47 Site - 7:5] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:26,733   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 4220, uncompressed size = 9694)
+2019-03-29 08:02:26,947   INFO  [SP 47 Site - 7:5] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:26,951   INFO  [SP 47 Site - 7:5] IMPORT: Final importer count:0
+2019-03-29 08:02:26,951   INFO  [SP 47 Site - 7:5] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:26,951   INFO  [SP 47 Site - 7:5] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:26,951   INFO  [SP 47 Site - 7:5] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:27,444   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 5360, uncompressed size = 9500)
+2019-03-29 08:02:27,600   INFO  [SP 46 Site - 7:4] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:27,604   INFO  [SP 46 Site - 7:4] IMPORT: Final importer count:0
+2019-03-29 08:02:27,605   INFO  [SP 46 Site - 7:4] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:27,605   INFO  [SP 46 Site - 7:4] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:27,605   INFO  [SP 46 Site - 7:4] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:28,078   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 5368, uncompressed size = 9500)
+2019-03-29 08:02:28,239   INFO  [SP 47 Site - 7:5] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:28,243   INFO  [SP 47 Site - 7:5] IMPORT: Final importer count:0
+2019-03-29 08:02:28,243   INFO  [SP 47 Site - 7:5] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:28,243   INFO  [SP 47 Site - 7:5] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:28,243   INFO  [SP 47 Site - 7:5] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:28,724   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 232, uncompressed size = 268)
+2019-03-29 08:02:28,886   INFO  [SP 47 Site - 7:5] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:28,890   INFO  [SP 47 Site - 7:5] IMPORT: Final importer count:0
+2019-03-29 08:02:28,890   INFO  [SP 47 Site - 7:5] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:28,890   INFO  [SP 47 Site - 7:5] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:28,890   INFO  [SP 47 Site - 7:5] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:29,373   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 228, uncompressed size = 268)
+2019-03-29 08:02:29,529   INFO  [SP 46 Site - 7:4] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:29,533   INFO  [SP 46 Site - 7:4] IMPORT: Final importer count:0
+2019-03-29 08:02:29,533   INFO  [SP 46 Site - 7:4] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:29,533   INFO  [SP 46 Site - 7:4] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:29,533   INFO  [SP 46 Site - 7:4] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:30,034   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 228, uncompressed size = 268)
+2019-03-29 08:02:30,177   INFO  [SP 46 Site - 7:4] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:30,180   INFO  [SP 46 Site - 7:4] IMPORT: Final importer count:0
+2019-03-29 08:02:30,180   INFO  [SP 46 Site - 7:4] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:30,180   INFO  [SP 46 Site - 7:4] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:30,180   INFO  [SP 46 Site - 7:4] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:30,668   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 2292, uncompressed size = 1911)
+2019-03-29 08:02:30,834   INFO  [SP 46 Site - 7:4] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:30,838   INFO  [SP 46 Site - 7:4] IMPORT: Final importer count:0
+2019-03-29 08:02:30,838   INFO  [SP 46 Site - 7:4] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:30,838   INFO  [SP 46 Site - 7:4] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:30,838   INFO  [SP 46 Site - 7:4] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:31,370   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 2228, uncompressed size = 1863)
+2019-03-29 08:02:31,479   INFO  [DRConsumerGateway] DRAGENT: Established DR client connection to 35.237.114.1:5555
+2019-03-29 08:02:31,518   INFO  [DRConsumerGateway] DRAGENT: After negotiation the DR protocol version has been set to 8
+2019-03-29 08:02:31,526   INFO  [SP 46 Site - 7:4] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:31,529   INFO  [SP 46 Site - 7:4] IMPORT: Final importer count:0
+2019-03-29 08:02:31,530   INFO  [SP 46 Site - 7:4] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:31,530   INFO  [SP 46 Site - 7:4] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:31,530   INFO  [SP 46 Site - 7:4] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:31,558   WARN  [DRConsumerGateway] DRAGENT: Error connecting to mesh : Missing DR table T_TRANSACTION on local cluster
+Inconsistent DR table schemas across clusters prevents replication of those tables.
+2019-03-29 08:02:31,558   WARN  [DRConsumerGateway] DRAGENT: Failed to connect to cluster mesh. Retrying in 10000 ms
+2019-03-29 08:02:32,003   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 2224, uncompressed size = 1859)
+2019-03-29 08:02:32,172   INFO  [SP 45 Site - 7:3] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:32,175   INFO  [SP 45 Site - 7:3] IMPORT: Final importer count:0
+2019-03-29 08:02:32,175   INFO  [SP 45 Site - 7:3] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:32,175   INFO  [SP 45 Site - 7:3] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:32,175   INFO  [SP 45 Site - 7:3] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:32,734   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 2236, uncompressed size = 1867)
+2019-03-29 08:02:32,884   INFO  [SP 46 Site - 7:4] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:32,887   INFO  [SP 46 Site - 7:4] IMPORT: Final importer count:0
+2019-03-29 08:02:32,888   INFO  [SP 46 Site - 7:4] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:32,888   INFO  [SP 46 Site - 7:4] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:32,888   INFO  [SP 46 Site - 7:4] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:33,363   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 4252, uncompressed size = 7673)
+2019-03-29 08:02:33,528   INFO  [SP 47 Site - 7:5] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:33,531   INFO  [SP 47 Site - 7:5] IMPORT: Final importer count:0
+2019-03-29 08:02:33,532   INFO  [SP 47 Site - 7:5] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:33,532   INFO  [SP 47 Site - 7:5] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:33,532   INFO  [SP 47 Site - 7:5] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:34,041   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 2636, uncompressed size = 2311)
+2019-03-29 08:02:34,230   INFO  [SP 45 Site - 7:3] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:34,233   INFO  [SP 45 Site - 7:3] IMPORT: Final importer count:0
+2019-03-29 08:02:34,233   INFO  [SP 45 Site - 7:3] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:34,233   INFO  [SP 45 Site - 7:3] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:34,233   INFO  [SP 45 Site - 7:3] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:34,749   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 2960, uncompressed size = 2874)
+2019-03-29 08:02:34,891   INFO  [SP 46 Site - 7:4] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:34,894   INFO  [SP 46 Site - 7:4] IMPORT: Final importer count:0
+2019-03-29 08:02:34,895   INFO  [SP 46 Site - 7:4] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:34,895   INFO  [SP 46 Site - 7:4] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:34,895   INFO  [SP 46 Site - 7:4] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:35,371   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 2976, uncompressed size = 2938)
+2019-03-29 08:02:35,623   INFO  [SP 47 Site - 7:5] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:35,627   INFO  [SP 47 Site - 7:5] IMPORT: Final importer count:0
+2019-03-29 08:02:35,627   INFO  [SP 47 Site - 7:5] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:35,627   INFO  [SP 47 Site - 7:5] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:35,627   INFO  [SP 47 Site - 7:5] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:36,146   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 2688, uncompressed size = 2221)
+2019-03-29 08:02:36,343   INFO  [SP 47 Site - 7:5] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:36,346   INFO  [SP 47 Site - 7:5] IMPORT: Final importer count:0
+2019-03-29 08:02:36,347   INFO  [SP 47 Site - 7:5] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:36,347   INFO  [SP 47 Site - 7:5] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:36,347   INFO  [SP 47 Site - 7:5] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:36,833   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 4412, uncompressed size = 7524)
+2019-03-29 08:02:37,029   INFO  [SP 46 Site - 7:4] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:37,032   INFO  [SP 46 Site - 7:4] IMPORT: Final importer count:0
+2019-03-29 08:02:37,032   INFO  [SP 46 Site - 7:4] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:37,032   INFO  [SP 46 Site - 7:4] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:37,032   INFO  [SP 46 Site - 7:4] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:37,542   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 3456, uncompressed size = 3351)
+2019-03-29 08:02:37,711   INFO  [SP 45 Site - 7:3] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:37,715   INFO  [SP 45 Site - 7:3] IMPORT: Final importer count:0
+2019-03-29 08:02:37,715   INFO  [SP 45 Site - 7:3] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:37,715   INFO  [SP 45 Site - 7:3] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:37,715   INFO  [SP 45 Site - 7:3] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:38,211   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 4816, uncompressed size = 8155)
+2019-03-29 08:02:38,448   INFO  [SP 45 Site - 7:3] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:38,453   INFO  [SP 45 Site - 7:3] IMPORT: Final importer count:0
+2019-03-29 08:02:38,453   INFO  [SP 45 Site - 7:3] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:38,453   INFO  [SP 45 Site - 7:3] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:38,453   INFO  [SP 45 Site - 7:3] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:38,960   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 3664, uncompressed size = 3330)
+2019-03-29 08:02:39,127   INFO  [SP 47 Site - 7:5] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:39,130   INFO  [SP 47 Site - 7:5] IMPORT: Final importer count:0
+2019-03-29 08:02:39,130   INFO  [SP 47 Site - 7:5] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:39,130   INFO  [SP 47 Site - 7:5] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:39,130   INFO  [SP 47 Site - 7:5] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:39,623   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 4996, uncompressed size = 8252)
+2019-03-29 08:02:39,814   INFO  [SP 45 Site - 7:3] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:39,817   INFO  [SP 45 Site - 7:3] IMPORT: Final importer count:0
+2019-03-29 08:02:39,817   INFO  [SP 45 Site - 7:3] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:39,817   INFO  [SP 45 Site - 7:3] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:39,817   INFO  [SP 45 Site - 7:3] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:40,385   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 3776, uncompressed size = 3405)
+2019-03-29 08:02:40,553   INFO  [SP 45 Site - 7:3] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:40,557   INFO  [SP 45 Site - 7:3] IMPORT: Final importer count:0
+2019-03-29 08:02:40,558   INFO  [SP 45 Site - 7:3] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:40,558   INFO  [SP 45 Site - 7:3] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:40,558   INFO  [SP 45 Site - 7:3] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:41,029   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 228, uncompressed size = 268)
+2019-03-29 08:02:41,185   INFO  [SP 45 Site - 7:3] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:41,188   INFO  [SP 45 Site - 7:3] IMPORT: Final importer count:0
+2019-03-29 08:02:41,189   INFO  [SP 45 Site - 7:3] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:41,189   INFO  [SP 45 Site - 7:3] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:41,189   INFO  [SP 45 Site - 7:3] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:41,600   INFO  [DRConsumerGateway] DRAGENT: Established DR client connection to 35.237.114.1:5555
+2019-03-29 08:02:41,640   INFO  [DRConsumerGateway] DRAGENT: After negotiation the DR protocol version has been set to 8
+2019-03-29 08:02:41,681   INFO  [DRConsumerGateway] DRAGENT: Connecting to leader cluster: 1
+2019-03-29 08:02:41,694   INFO  [DR PC1 Consumer Primary] DRAGENT: Attempting to attach to DR producer cluster 1.
+2019-03-29 08:02:41,694   INFO  [DR PC1 Consumer Primary] DRAGENT: Attempting to connect to Cluster 1 at 10.24.7.2:5555
+2019-03-29 08:02:41,711   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 10032, uncompressed size = 15647)
+2019-03-29 08:02:41,732   INFO  [DR PC1 Consumer Primary] DRAGENT: Established DR client connection to 10.24.7.2:5555
+2019-03-29 08:02:41,772   INFO  [DR PC1 Consumer Primary] DRAGENT: After negotiation the DR protocol version has been set to 8
+2019-03-29 08:02:41,818   INFO  [DR PC1 Consumer Primary] DRAGENT: Producer cluster 1 has 60 partitions, this cluster has 60. Both clusters use the same hashinators.
+2019-03-29 08:02:41,819   INFO  [DR PC1 Consumer Primary] DRAGENT: Overriding DR_BUFFER_RESUBSCRIBE_THRESHOLD value to 21
+2019-03-29 08:02:41,824   INFO  [DR PC1 Consumer Primary] DRAGENT: Detecting topology of DR producer cluster 1. The following member nodes were reported:
+2019-03-29 08:02:41,824   INFO  [DR PC1 Consumer Primary] DRAGENT: 10.24.7.2:5555
+2019-03-29 08:02:41,824   INFO  [DR PC1 Consumer Primary] DRAGENT: 10.24.3.2:5555
+2019-03-29 08:02:41,824   INFO  [DR PC1 Consumer Primary] DRAGENT: 10.24.1.3:5555
+2019-03-29 08:02:41,824   INFO  [DR PC1 Consumer Primary] DRAGENT: 10.24.6.2:5555
+2019-03-29 08:02:41,824   INFO  [DR PC1 Consumer Primary] DRAGENT: 10.24.5.2:5555
+2019-03-29 08:02:41,824   INFO  [DR PC1 Consumer Primary] DRAGENT: 10.24.4.2:5555
+2019-03-29 08:02:41,824   INFO  [DR PC1 Consumer Primary] DRAGENT: 10.24.9.3:5555
+2019-03-29 08:02:41,824   INFO  [DR PC1 Consumer Primary] DRAGENT: 10.24.51.3:5555
+2019-03-29 08:02:41,824   INFO  [DR PC1 Consumer Primary] DRAGENT: 10.24.2.3:5555
+2019-03-29 08:02:41,824   INFO  [DR PC1 Consumer Primary] DRAGENT: 10.24.8.2:5555
+2019-03-29 08:02:41,860   INFO  [DR PC1 Consumer Primary] DRAGENT: Established DR client connection to 10.24.7.2:5555
+2019-03-29 08:02:41,900   INFO  [DR PC1 Consumer Primary] DRAGENT: After negotiation the DR protocol version has been set to 8
+2019-03-29 08:02:41,968   INFO  [SP 47 Site - 7:5] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:41,972   INFO  [SP 47 Site - 7:5] IMPORT: Final importer count:0
+2019-03-29 08:02:41,972   INFO  [SP 47 Site - 7:5] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:41,972   INFO  [SP 47 Site - 7:5] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:41,972   INFO  [SP 47 Site - 7:5] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:41,979   INFO  [DR PC1 Consumer Primary] DRAGENT: Established DR client connection to 10.24.3.2:5555
+2019-03-29 08:02:42,018   INFO  [DR PC1 Consumer Primary] DRAGENT: After negotiation the DR protocol version has been set to 8
+2019-03-29 08:02:42,097   INFO  [DR PC1 Consumer Primary] DRAGENT: Established DR client connection to 10.24.1.3:5555
+2019-03-29 08:02:42,135   INFO  [DR PC1 Consumer Primary] DRAGENT: After negotiation the DR protocol version has been set to 8
+2019-03-29 08:02:42,212   INFO  [DR PC1 Consumer Primary] DRAGENT: Established DR client connection to 10.24.6.2:5555
+2019-03-29 08:02:42,251   INFO  [DR PC1 Consumer Primary] DRAGENT: After negotiation the DR protocol version has been set to 8
+2019-03-29 08:02:42,328   INFO  [DR PC1 Consumer Primary] DRAGENT: Established DR client connection to 10.24.5.2:5555
+2019-03-29 08:02:42,366   INFO  [DR PC1 Consumer Primary] DRAGENT: After negotiation the DR protocol version has been set to 8
+2019-03-29 08:02:42,443   INFO  [DR PC1 Consumer Primary] DRAGENT: Established DR client connection to 10.24.4.2:5555
+2019-03-29 08:02:42,481   INFO  [DR PC1 Consumer Primary] DRAGENT: After negotiation the DR protocol version has been set to 8
+2019-03-29 08:02:42,551   INFO  [NTPServiceThread-Priority-0] HOST: Verify user procedure classes and write catalog jar (compressed size = 6216, uncompressed size = 13120)
+2019-03-29 08:02:42,557   INFO  [DR PC1 Consumer Primary] DRAGENT: Established DR client connection to 10.24.9.3:5555
+2019-03-29 08:02:42,596   INFO  [DR PC1 Consumer Primary] DRAGENT: After negotiation the DR protocol version has been set to 8
+2019-03-29 08:02:42,673   INFO  [DR PC1 Consumer Primary] DRAGENT: Established DR client connection to 10.24.51.3:5555
+2019-03-29 08:02:42,707   INFO  [SP 47 Site - 7:5] EXPORT: No stream related changes in update catalog.
+2019-03-29 08:02:42,710   INFO  [SP 47 Site - 7:5] IMPORT: Final importer count:0
+2019-03-29 08:02:42,710   INFO  [SP 47 Site - 7:5] HOST: Resource limit monitoring configured to run every 60 seconds
+2019-03-29 08:02:42,711   INFO  [SP 47 Site - 7:5] HOST: RSS limit: 80% (40.88 GB)
+2019-03-29 08:02:42,711   INFO  [SP 47 Site - 7:5] HOST: RSS SNMP notification limit: 70% (35.77 GB)
+2019-03-29 08:02:42,713   INFO  [DR PC1 Consumer Primary] DRAGENT: After negotiation the DR protocol version has been set to 8
+2019-03-29 08:02:42,790   INFO  [DR PC1 Consumer Primary] DRAGENT: Established DR client connection to 10.24.2.3:5555
+2019-03-29 08:02:42,829   INFO  [DR PC1 Consumer Primary] DRAGENT: After negotiation the DR protocol version has been set to 8
+2019-03-29 08:02:42,906   INFO  [DR PC1 Consumer Primary] DRAGENT: Established DR client connection to 10.24.8.2:5555
+2019-03-29 08:02:42,945   INFO  [DR PC1 Consumer Primary] DRAGENT: After negotiation the DR protocol version has been set to 8
+2019-03-29 08:02:42,998   INFO  [DR PC1 Consumer Primary] DRAGENT: Awaiting snapshot initialization by another consumer node
+2019-03-29 08:02:43,094   INFO  [SP 42 Site - 7:0] HOST: Server is entering admin mode and pausing.
+2019-03-29 08:02:43,517   INFO  [DRProducer] DR: Added cluster 1/1553845940735 to active consumer cluster set.
+2019-03-29 08:02:43,717   INFO  [SSM Daemon] DR: SMI PER_HOST_DR_STATES/DR_PRODUCER_STATES/Host_7_v0: Proposed state succeeded NO_SNAPSHOT:ADD_FOR_CURSOR_ONLY, 0, 1, 8, [1/[0, 1553845940735, 8, 60, true, [10.24.51.3:5555, 10.24.7.2:5555, 10.24.3.2:5555, 10.24.1.3:5555, 10.24.6.2:5555, 10.24.5.2:5555, 10.24.4.2:5555, 10.24.9.3:5555, 10.24.2.3:5555, 10.24.8.2:5555, ]], ], []
+2019-03-29 08:02:43,752   INFO  [SP 42 Site - 7:0] HOST: DR protocol version has been set to 8
+2019-03-29 08:02:43,753   INFO  [SP 46 Site - 7:4] HOST: DR protocol version has been set to 8
+2019-03-29 08:02:43,753   INFO  [SP 44 Site - 7:2] HOST: DR protocol version has been set to 8
+2019-03-29 08:02:43,753   INFO  [SP 45 Site - 7:3] HOST: DR protocol version has been set to 8
+2019-03-29 08:02:43,753   INFO  [SP 47 Site - 7:5] HOST: DR protocol version has been set to 8
+2019-03-29 08:02:43,753   INFO  [SP 43 Site - 7:1] HOST: DR protocol version has been set to 8
+2019-03-29 08:02:44,814   INFO  [DR PC1 Consumer Primary] DRAGENT: Successfully connected to producer cluster 1 at 10.24.7.2:5555
+2019-03-29 08:02:45,241   INFO  [DR PC1 Consumer Primary] DRAGENT: All sync snapshot buffers acked. Awaiting global snapshot completion
+2019-03-29 08:02:45,553   INFO  [DRProducer client connection acceptor] DR: New Connection received from host /10.24.5.2:39780
+2019-03-29 08:02:45,584   INFO  [DRProducer client connection acceptor] DR: New Connection received from host /10.24.1.3:37964
+2019-03-29 08:02:45,622   INFO  [DRProducer client connection acceptor] DR: New Connection received from host /10.24.51.3:58764
+2019-03-29 08:02:45,652   INFO  [DRProducer client connection acceptor] DR: New Connection received from host /10.24.9.3:54572
+2019-03-29 08:02:45,686   INFO  [DR PC1 Consumer Primary] DRAGENT: Snapshot sync finished from cluster 1. Switching back to regular invocation stream
+2019-03-29 08:02:45,729   INFO  [DRProducer client connection acceptor] DR: New Connection received from host /10.24.4.2:52694
+2019-03-29 08:02:45,767   INFO  [DRProducer client connection acceptor] DR: New Connection received from host /10.24.3.2:52960
+2019-03-29 08:02:45,796   INFO  [SP 42 Site - 7:0] HOST: Server is exiting admin mode and resuming operation.
+2019-03-29 08:02:45,804   INFO  [DRProducer client connection acceptor] DR: New Connection received from host /10.24.8.2:49958
+2019-03-29 08:02:45,806   INFO  [DRProducer client connection acceptor] DR: New Connection received from host /10.24.6.2:59676
+2019-03-29 08:02:45,808   INFO  [DRProducer client connection acceptor] DR: New Connection received from host /10.24.7.2:52948
+2019-03-29 08:02:45,830   INFO  [DRProducer client connection acceptor] DR: New Connection received from host /10.24.2.3:36072
+2019-03-29 08:05:02,361   INFO  [Client authenticator - 0] NETWORK: SSL enabled on connection /10.32.12.3:58782 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:02,383   INFO  [Client authenticator - 1] NETWORK: SSL enabled on connection /10.32.12.3:58784 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:02,969   INFO  [Client authenticator - 1] NETWORK: SSL enabled on connection /10.32.17.2:42880 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:03,122   INFO  [Client authenticator - 1] NETWORK: SSL enabled on connection /10.32.17.2:42896 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:03,203   INFO  [Client authenticator - 1] NETWORK: SSL enabled on connection /10.32.18.2:57886 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:03,217   INFO  [Client authenticator - 2] NETWORK: SSL enabled on connection /10.32.23.3:55680 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:03,249   INFO  [Client authenticator - 3] NETWORK: SSL enabled on connection /10.32.23.3:55682 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:03,257   INFO  [Client authenticator - 0] NETWORK: SSL enabled on connection /10.32.18.2:57888 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:03,269   INFO  [Client authenticator - 2] NETWORK: SSL enabled on connection /10.32.16.2:59520 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:03,326   INFO  [Client authenticator - 0] NETWORK: SSL enabled on connection /10.32.16.2:59522 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:03,381   INFO  [Client authenticator - 0] NETWORK: SSL enabled on connection /10.32.22.2:38838 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:03,425   INFO  [Client authenticator - 2] NETWORK: SSL enabled on connection /10.32.14.2:57774 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:03,432   INFO  [Client authenticator - 0] NETWORK: SSL enabled on connection /10.32.22.2:38844 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:03,472   INFO  [Client authenticator - 3] NETWORK: SSL enabled on connection /10.32.14.2:57776 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:03,537   INFO  [Client authenticator - 3] NETWORK: SSL enabled on connection /10.32.39.2:42556 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:03,579   INFO  [Client authenticator - 0] NETWORK: SSL enabled on connection /10.32.39.2:42558 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:04,296   INFO  [Client authenticator - 0] NETWORK: SSL enabled on connection /10.32.24.2:48236 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:04,385   INFO  [Client authenticator - 0] NETWORK: SSL enabled on connection /10.32.19.2:50976 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:04,417   INFO  [Client authenticator - 0] NETWORK: SSL enabled on connection /10.32.24.2:48248 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:04,425   INFO  [Client authenticator - 3] NETWORK: SSL enabled on connection /10.32.19.2:50978 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:04,603   INFO  [Client authenticator - 3] NETWORK: SSL enabled on connection /10.32.31.2:56002 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:04,635   INFO  [Client authenticator - 0] NETWORK: SSL enabled on connection /10.32.31.2:56004 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:04,701   INFO  [Client authenticator - 0] NETWORK: SSL enabled on connection /10.32.26.2:36496 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:04,741   INFO  [Client authenticator - 3] NETWORK: SSL enabled on connection /10.32.26.2:36498 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:04,951   INFO  [Client authenticator - 3] NETWORK: SSL enabled on connection /10.32.45.2:55780 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:04,992   INFO  [Client authenticator - 0] NETWORK: SSL enabled on connection /10.32.45.2:55782 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:06,874   INFO  [Client authenticator - 0] NETWORK: SSL enabled on connection /10.32.37.2:33746 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:06,900   INFO  [Client authenticator - 3] NETWORK: SSL enabled on connection /10.32.37.2:33748 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:07,010   INFO  [Client authenticator - 3] NETWORK: SSL enabled on connection /10.32.40.3:49924 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:07,036   INFO  [Client authenticator - 0] NETWORK: SSL enabled on connection /10.32.10.3:49144 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:07,970   INFO  [Client authenticator - 0] NETWORK: SSL enabled on connection /10.32.21.2:54332 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:08,758   INFO  [Client authenticator - 0] NETWORK: SSL enabled on connection /10.32.42.2:38126 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:05:17,308   INFO  [Client authenticator - 0] NETWORK: SSL enabled on connection /10.32.20.2:58240 with protocol TLSv1.2 and with cipher TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-03-29 08:08:36,335   INFO  [Command Log IO] LOGGING: Loaned out log segment /var/voltdb/voltdbroot/command_log/segments/loaned.2 took 9937 microseconds
+2019-03-29 08:08:36,343   INFO  [Command Log Segment Allocator] LOGGING: Finished adding segment in 15805 microseconds
+2019-03-29 08:09:25,565   INFO  [Command Log IO] LOGGING: Loaned out log segment /var/voltdb/voltdbroot/command_log/segments/loaned.3 took 8855 microseconds
+2019-03-29 08:09:25,574   INFO  [Command Log Segment Allocator] LOGGING: Finished adding segment in 16432 microseconds
+2019-03-29 08:10:15,397   INFO  [Command Log IO] LOGGING: Loaned out log segment /var/voltdb/voltdbroot/command_log/segments/loaned.4 took 9880 microseconds
+2019-03-29 08:10:15,407   INFO  [Command Log Segment Allocator] LOGGING: Finished adding segment in 19067 microseconds
+2019-03-29 08:11:05,420   INFO  [Command Log IO] LOGGING: Requesting truncation snapshot
+2019-03-29 08:11:05,431   INFO  [Command Log IO] LOGGING: Loaned out log segment /var/voltdb/voltdbroot/command_log/segments/loaned.5 took 11037 microseconds
+2019-03-29 08:11:05,441   INFO  [Command Log Segment Allocator] LOGGING: Finished adding segment in 18545 microseconds
+2019-03-29 08:11:15,619   INFO  [Snapshot terminator] SNAPSHOT: Snapshot 1553847073971 finished at 1553847075618 and took 1.538 seconds 
+2019-03-29 08:11:16,503   INFO  [SnapshotDaemon] LOGGING: Snapshot daemon grooming truncation snapshots
+2019-03-29 08:11:16,503   INFO  [SnapshotDaemon] LOGGING: Found most recent successful snapshot txnid (3999:16383) path /var/voltdb/voltdbroot/command_log_snapshot nonce 1553847073971
+2019-03-29 08:11:16,503   INFO  [SnapshotDaemon] LOGGING: Deleting old unecessary snapshot txnid (1:16383) path /var/voltdb/voltdbroot/command_log_snapshot nonce 1553846498764
+2019-03-29 08:11:16,512   INFO  [Async snapshot deletion thread] SNAPSHOT: Deleting files: /var/voltdb/voltdbroot/command_log_snapshot/1553846498764-host_7.hash,/var/voltdb/voltdbroot/command_log_snapshot/1553846498764-host_7.finished,/var/voltdb/voltdbroot/command_log_snapshot/1553846498764-host_7.digest,/var/voltdb/voltdbroot/command_log_snapshot/1553846498764.jar,
+2019-03-29 08:11:16,516   INFO  [Async snapshot deletion thread] SNAPSHOT: Deleting files: 
+2019-03-29 08:11:16,516   INFO  [Async snapshot deletion thread] SNAPSHOT: Deleting files: 
+2019-03-29 08:11:16,521   INFO  [Async snapshot deletion thread] SNAPSHOT: Deleting files: 
+2019-03-29 08:11:16,523   INFO  [Async snapshot deletion thread] SNAPSHOT: Deleting files: 
+2019-03-29 08:11:16,524   INFO  [Async snapshot deletion thread] SNAPSHOT: Deleting files: 
+2019-03-29 08:11:16,524   INFO  [Async snapshot deletion thread] SNAPSHOT: Deleting files: 
+2019-03-29 08:11:16,529   INFO  [Async snapshot deletion thread] SNAPSHOT: Deleting files: 
+2019-03-29 08:11:16,530   INFO  [Async snapshot deletion thread] SNAPSHOT: Deleting files: 
+2019-03-29 08:11:16,530   INFO  [Async snapshot deletion thread] SNAPSHOT: Deleting files: 
+2019-03-29 08:11:16,550   INFO  [Command Log IO] LOGGING: Returned command log segment /var/voltdb/voltdbroot/command_log/segments/loaned.1 took 309 microseconds
+2019-03-29 08:11:16,550   INFO  [Command Log IO] LOGGING: Returned command log segment /var/voltdb/voltdbroot/command_log/segments/loaned.2 took 88 microseconds
+2019-03-29 08:11:16,550   INFO  [Command Log IO] LOGGING: Returned command log segment /var/voltdb/voltdbroot/command_log/segments/loaned.3 took 58 microseconds
+2019-03-29 08:11:16,550   INFO  [Command Log IO] LOGGING: Returned command log segment /var/voltdb/voltdbroot/command_log/segments/loaned.4 took 41 microseconds
+2019-03-29 08:11:54,654   INFO  [Command Log IO] LOGGING: Loaned out log segment /var/voltdb/voltdbroot/command_log/segments/loaned.6 took 4295 microseconds
+2019-03-29 08:12:44,692   INFO  [Command Log IO] LOGGING: Loaned out log segment /var/voltdb/voltdbroot/command_log/segments/loaned.7 took 7988 microseconds
